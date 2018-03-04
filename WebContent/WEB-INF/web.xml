@@ -9,4 +9,44 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>SendCookieServlet</display-name>
+    <servlet-name>SendCookieServlet</servlet-name>
+    <servlet-class>com.itheima.cookie.SendCookieServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SendCookieServlet</servlet-name>
+    <url-pattern>/sendCookie</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>RemoveCookie</display-name>
+    <servlet-name>RemoveCookie</servlet-name>
+    <servlet-class>com.itheima.cookie.RemoveCookie</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RemoveCookie</servlet-name>
+    <url-pattern>/remove</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>GetCookieServlet</display-name>
+    <servlet-name>GetCookieServlet</servlet-name>
+    <servlet-class>com.itheima.cookie.GetCookieServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GetCookieServlet</servlet-name>
+    <url-pattern>/getCookie</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>LastAccessTimeServlet</display-name>
+    <servlet-name>LastAccessTimeServlet</servlet-name>
+    <servlet-class>com.itheima.cookie.demo.LastAccessTimeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LastAccessTimeServlet</servlet-name>
+    <url-pattern>/lastAccessTime</url-pattern>
+  </servlet-mapping>
 </web-app>
