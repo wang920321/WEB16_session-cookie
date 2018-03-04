@@ -69,8 +69,24 @@
     <servlet-name>SessionServlet2</servlet-name>
     <url-pattern>/session2</url-pattern>
   </servlet-mapping>
-  <!-- session 1分钟过期
-  <session-config>
-        <session-timeout>1</session-timeout>
-    </session-config> -->
+  <servlet>
+    <description></description>
+    <display-name>CheckImgServlet</display-name>
+    <servlet-name>CheckImgServlet</servlet-name>
+    <servlet-class>com.itheima.checking.CheckImgServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CheckImgServlet</servlet-name>
+    <url-pattern>/checkImg</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>LoginServlet</display-name>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>com.itheima.login.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/login</url-pattern>
+  </servlet-mapping>
 </web-app>
