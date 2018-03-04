@@ -49,4 +49,28 @@
     <servlet-name>LastAccessTimeServlet</servlet-name>
     <url-pattern>/lastAccessTime</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>SessionServlet1</display-name>
+    <servlet-name>SessionServlet1</servlet-name>
+    <servlet-class>com.itheima.session.SessionServlet1</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SessionServlet1</servlet-name>
+    <url-pattern>/session1</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>SessionServlet2</display-name>
+    <servlet-name>SessionServlet2</servlet-name>
+    <servlet-class>com.itheima.session.SessionServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SessionServlet2</servlet-name>
+    <url-pattern>/session2</url-pattern>
+  </servlet-mapping>
+  <!-- session 1分钟过期
+  <session-config>
+        <session-timeout>1</session-timeout>
+    </session-config> -->
 </web-app>
